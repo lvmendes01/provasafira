@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lvmendes.Prova.Entidade", "..\lvmendes.Usuario.Entidade\lvmendes.Prova.Entidade.csproj", "{13525696-85F0-4F72-9FAE-9DD627304777}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lvmendes.Prova.Repositorio", "..\lvmendes.Usuario.Rerpositorio\lvmendes.Prova.Repositorio.csproj", "{4777F331-006B-4BFB-80A7-578E7E4A4B3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lvmendes.Prova.Servico", "..\lvmendes.Usuario.Servico\lvmendes.Prova.Servico.csproj", "{96B0F99F-0CBE-4382-A3EF-0481180DA058}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lvmendes.Prova.WeApi", "..\lvmendes.super.WeApi\lvmendes.Prova.WeApi.csproj", "{FABF1A38-F354-4C12-AB1C-F5ACFE13EECC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testes", "Testes\Testes.csproj", "{69A55B89-C32C-4C03-8D85-6F393754B844}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AngularFrontProva", "..\AngularFrontProva\", "{1F8D1052-823E-4A40-A186-5DC77E44A25F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_63794"
+		Debug.AspNetCompiler.PhysicalPath = "..\AngularFrontProva\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63794\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_63794"
+		Release.AspNetCompiler.PhysicalPath = "..\AngularFrontProva\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63794\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63794"
+		SlnRelativePath = "..\AngularFrontProva\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13525696-85F0-4F72-9FAE-9DD627304777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13525696-85F0-4F72-9FAE-9DD627304777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13525696-85F0-4F72-9FAE-9DD627304777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13525696-85F0-4F72-9FAE-9DD627304777}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4777F331-006B-4BFB-80A7-578E7E4A4B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4777F331-006B-4BFB-80A7-578E7E4A4B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4777F331-006B-4BFB-80A7-578E7E4A4B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4777F331-006B-4BFB-80A7-578E7E4A4B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96B0F99F-0CBE-4382-A3EF-0481180DA058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B0F99F-0CBE-4382-A3EF-0481180DA058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B0F99F-0CBE-4382-A3EF-0481180DA058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B0F99F-0CBE-4382-A3EF-0481180DA058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABF1A38-F354-4C12-AB1C-F5ACFE13EECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABF1A38-F354-4C12-AB1C-F5ACFE13EECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABF1A38-F354-4C12-AB1C-F5ACFE13EECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABF1A38-F354-4C12-AB1C-F5ACFE13EECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A55B89-C32C-4C03-8D85-6F393754B844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A55B89-C32C-4C03-8D85-6F393754B844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A55B89-C32C-4C03-8D85-6F393754B844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A55B89-C32C-4C03-8D85-6F393754B844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F8D1052-823E-4A40-A186-5DC77E44A25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F8D1052-823E-4A40-A186-5DC77E44A25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F8D1052-823E-4A40-A186-5DC77E44A25F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F8D1052-823E-4A40-A186-5DC77E44A25F}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BCA5ED6-FA64-449A-9ECF-FD257EB78429}
+	EndGlobalSection
+EndGlobal

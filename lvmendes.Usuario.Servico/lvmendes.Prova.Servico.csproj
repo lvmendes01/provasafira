@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\lvmendes.Usuario.Entidade\lvmendes.Prova.Entidade.csproj" />
+    <ProjectReference Include="..\lvmendes.Usuario.Rerpositorio\lvmendes.Prova.Repositorio.csproj" />
+  </ItemGroup>
+
+</Project>

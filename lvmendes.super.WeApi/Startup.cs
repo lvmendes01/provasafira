@@ -1,4 +1,8 @@
 
+using lvmendes.Prova.Servico;
+using lvmendes.Prova.Servico.Interfaces;
+using Lvmendes.Prova.Repositorio;
+using Lvmendes.Prova.Repositorio.Interfaces;
 using Lvmendes.Prova.Servico;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -34,7 +38,9 @@ namespace Lvmendes.Super.WeApi
             });
 
             services.AddSingleton<IArtistaService, ArtistaServico>();
-            
+            services.AddSingleton<IUsuarioServico, UsuarioServico>();
+            services.AddSingleton<IUsuarioRepositorio, UsuarioRepositorio>();
+
 
 
             services.AddCors();

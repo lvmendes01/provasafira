@@ -1,5 +1,6 @@
 ﻿
 using Lvmendes.Prova.Servico;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.Swagger.Annotations;
@@ -23,7 +24,7 @@ namespace Lvmendes.Super.WeApi.Controllers
         /// <summary>
         /// 
         /// </summary>
-        //[Authorize]
+        [Authorize]
         [HttpGet]
         [Route("/ListaTop/{total}")]
         [SwaggerOperation("")]

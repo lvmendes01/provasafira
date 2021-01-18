@@ -1,4 +1,5 @@
-﻿using Lvmendes.Prova.Entidade;
+﻿using lvmendes.Prova.Servico.Interfaces;
+using Lvmendes.Prova.Entidade;
 using Lvmendes.Super.WeApi.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -16,18 +17,18 @@ namespace Lvmendes.Super.WeApi.Controllers
     public class AuthenticateController : Controller
     {
 
-        //private UserManager<ApplicationUser> userManager;
+        IUsuarioServico usuarioServico;
 
-        //public AuthenticateController(UserManager<ApplicationUser> userManager)
-        //{
-        //    //this.userManager = userManager;
-        //}
+        public AuthenticateController(IUsuarioServico _usuarioServico)
+        {
+            usuarioServico = _usuarioServico;
+        }
 
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
-            if (model.Username == "123")
+            if (usuarioServico.LoginUsuario(model.Username, model.Password ) != null)
             {
                 var authClaims = new[]
                 {

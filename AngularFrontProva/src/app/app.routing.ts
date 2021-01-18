@@ -1,19 +1,14 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
+import { ArtistasComponent } from './artistas/artistas.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './_helpers/auth.guard';
 
 export const AppRoutes: Routes = [
-     
-    {
-            path: '',
-            component: LoginComponent,
-          
-        },
-        {
-            path: 'inicio',
-            loadChildren: './components/components.module#ComponentsModule'
-          
-        },
+    
+    { path: 'artista', component: ArtistasComponent, canActivate: [AuthGuard] },
+    { path: '', component: LoginComponent },
+    // otherwise redirect to home
+    { path: '**', redirectTo: '' }
 
-       
         
 ];

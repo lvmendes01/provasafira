@@ -17,7 +17,7 @@ namespace Lvmendes.Prova.Repositorio.RepositorioBase
 
         protected RepositoryBase()
         {
-            //ConnectionString = "Data Source=192.168.2.13;Initial Catalog=HNT_INTEGRACAO;Persist Security Info=True;User ID=ti_aplicacao;Password=@htn_dev_13";
+            ConnectionString = "Data Source=den1.mssql8.gear.host;Initial Catalog=provateste;Persist Security Info=True;User ID=provateste;Password=Uh3S-l0ps8?y";
         }
 
         public virtual IEnumerable<TEntity> GetAll()

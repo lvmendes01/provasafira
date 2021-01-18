@@ -10,5 +10,6 @@ namespace Lvmendes.Prova.Entidade
 {
     public class ApplicationUser : IdentityUser
     {
+
     }
 }

@@ -15,7 +15,7 @@ namespace Lvmendes.Prova.Servico
             var listadoDezze = dezzerService.ListaArtistas(total);
 
 
-            for (int i = 0; i < listadoDezze.Count; i++)
+            for (int i = 0; i <= listadoDezze.Count; i++)
             {
                 listaRetornar.Add(new ArtistaModel
                 {

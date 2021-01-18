@@ -1,0 +1,64 @@
+
+
+
+<div class="main-content">
+
+
+
+<div class="row">
+    <input type="text"  [(ngModel)]="qtd" 
+    placeholder="Quantidade desejada" 
+   
+     class="form-control" >
+
+     <button  (click)="buscar()" class="btn btn-info">
+        Listar
+       </button>
+</div>
+            
+
+    <div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+        <div class="card card-plain" *ngFor="let item of listaArtistas; let i = index" >
+
+
+            <div class="row">
+
+
+                <div class="card-header" role="tab" id="headingOne">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne{{i}}" aria-expanded="false"
+                        aria-controls="collapseOne">
+                        {{item.nome}}
+
+                        <i class="nc-icon nc-icon nc-minimal-down"></i>
+                    </a>
+                </div>
+
+                <div id="collapseOne{{i}}" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="card mb-3" style="width: 20rem;">
+
+                                    <div id="accordion">
+                                        <div class="card">
+                                           Posição {{item.posicao}}
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <div class="post-content">
+                                           link  {{item.link}}
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

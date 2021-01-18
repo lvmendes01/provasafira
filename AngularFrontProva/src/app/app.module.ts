@@ -3,42 +3,41 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { APP_BASE_HREF } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent }   from './app.component';
 
-import { SidebarModule } from './sidebar/sidebar.module';
-import { FixedPluginModule } from './shared/fixedplugin/fixedplugin.module';
-import { FooterModule } from './shared/footer/footer.module';
-import { NavbarModule} from './shared/navbar/navbar.module';
-import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
-import { AuthLayoutComponent } from './layouts/auth/auth-layout.component';
 import { AppRoutes } from './app.routing';
-import { HttpClientModule } from '@angular/common/http';
-import { LojaService } from './_services/lojas.service';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ArtistasService } from './_services/artistas.service';
+import { ArtistasComponent } from './artistas/artistas.component';
+import { JwtInterceptor } from './_helpers/jwt.interceptor';
+import { ErrorInterceptor } from './_helpers/error.interceptor';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
     imports:      [
         BrowserAnimationsModule,
-        FormsModule,
+        FormsModule, ReactiveFormsModule,
         RouterModule.forRoot(AppRoutes,{
           useHash: true
         }),
         NgbModule,
         HttpModule,
-        SidebarModule,
-        NavbarModule,
-        FooterModule,
         HttpClientModule,
-        FixedPluginModule
     ],
     declarations: [
         AppComponent,
+        ArtistasComponent,
+        LoginComponent
     ],
     providers : [
 
-        LojaService
+        ArtistasService ,
+         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+        { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+
         ],
     
     bootstrap:    [ AppComponent ]
